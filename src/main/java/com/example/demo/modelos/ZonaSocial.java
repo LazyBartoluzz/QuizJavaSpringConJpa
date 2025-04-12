@@ -1,4 +1,4 @@
-package modelos;
+package com.example.demo.modelos;
 
 import jakarta.persistence.*;
 
@@ -16,6 +16,7 @@ public class ZonaSocial {
     private Integer capacidad;
 
     @OneToMany
+    @JoinColumn(name = "id_zonaSocial")
     private List<ReservaZona> reservasZona;
 
     public Long getId() {

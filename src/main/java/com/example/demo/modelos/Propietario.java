@@ -1,4 +1,4 @@
-package modelos;
+package com.example.demo.modelos;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -19,12 +19,15 @@ public class Propietario {
     private LocalTime hora_entrada;
 
     @OneToMany
+    @JoinColumn(name = "id_propietario")
     private List<Visitante> visitantes;
 
     @OneToMany
+    @JoinColumn(name = "id_propietario")
     private List<ReservaZona> reservasZona;
 
     @OneToMany
+    @JoinColumn(name = "id_propietario")
     private List<ReservaParqueadero> reservasParqueadero;
 
     public Long getId() {

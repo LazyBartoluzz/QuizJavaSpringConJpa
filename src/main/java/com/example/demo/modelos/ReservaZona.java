@@ -1,15 +1,15 @@
-package modelos;
+package com.example.demo.modelos;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-import java.time.LocalDate;
-import java.time.LocalTime;
-
 @Entity
-public class ReservaParqueadero {
+public class ReservaZona {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
